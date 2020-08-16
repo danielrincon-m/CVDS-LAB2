@@ -6,6 +6,12 @@ import edu.eci.cvds.patterns.shapes.concrete.Quadrilateral;
 import edu.eci.cvds.patterns.shapes.concrete.Triangle;
 
 public class ShapeFactory {
+    /**
+     * Creates a shape based on the input and its avalaibility in the
+     * RegularShapeType enum
+     * @param type The type of the shape
+     * @return The created shape or null if it is not available
+     */
     public static Shape create(RegularShapeType type) {
         switch (type) {
             case Triangle:
